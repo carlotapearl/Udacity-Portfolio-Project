@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 0.25em solid #7d97ad;
+  margin-bottom: 20px;
+}
+
+.header-name {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 3.2em;
+  margin: 0;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.10em;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+/* RESPONSIVE */
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  width: 33.33%;
+  text-align: center;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-4,
+.col-6,
+.col-12 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  color: #2d3c49;
+  margin: 0.25em;
+  margin-top: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.work-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+  color: #2d3c49;
+  margin: 0.25em;
+  text-transform: uppercase;
+}
+.header-logo {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.feature {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-left: 0.25em;
+  margin-top: 1em;
+  color: #7d97ad;
+}
+#hero-image {
+  background-image: url("hero.jpeg");
+  width: 100%;
+  height: 30em;
+  background-repeat: no-repeat;
+
+}
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1115px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .header-name {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .col-4,
+  .col-6 {
+    width: 100%;
+  }
+  .middle {
+    text-align: center;
+  }
+  .separator {
+    height: 2px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-name {
+    font-size: 35px;
+  }
+  .feature {
+    font-size: 40px;
+  }
+}
